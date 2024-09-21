@@ -1,1 +1,133 @@
-@import './base.css';/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "bold-InriaSans";
+  src: url("/fonts/inria-sans/InriaSans-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "bold-italic-InriaSans";
+  src: url("/fonts/inria-sans/InriaSans-BoldItalic.otf") format("truetype");
+}
+@font-face {
+  font-family: "regular-InriaSans";
+  src: url("/fonts/inria-sans/InriaSans-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "regular-outfit";
+  src: url("/fonts/outfit/OutfitRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bold-outfit";
+  src: url("/fonts/outfit/OutfitBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "extrabold-outfit";
+  src: url("/fonts/outfit/OutfitExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bold-inter";
+  src: url("/fonts/inter/Inter-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "semibold-inter";
+  src: url("/fonts/inter/Inter-SemiBold.otf") format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  background-color: #366639;
+}
+
+li {
+  list-style-type: none;
+  font-family: "bold";
+}
+
+a {
+  font-size: 12px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 12px;
+}
+
+#headerContainerWhite {
+  background-color: #ffffff;
+  width: 100%;
+  height: 70px;
+}
+
+#headerBar {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  position: relative;
+  top: 10px;
+}
+
+#logoContainer {
+  width: 70px;
+  height: 50px;
+  margin-left: 15px;
+}
+
+#containerLinks {
+  display: flex;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.container-links-header {
+  margin-right: 45px;
+}
+
+.links-header {
+  font-family: "semibold-inter";
+  font-size: 13px;
+  color: #366639;
+}
+
+.links-header:hover {
+  color: #dddf7e;
+}
+
+#linkHeaderSubscribe {
+  font-family: "semibold-inter";
+  font-size: 14px;
+  color: #366639;
+  border: solid 2px #dddf7e;
+  padding: 10px;
+  border-radius: 17px;
+}/*# sourceMappingURL=main.css.map */

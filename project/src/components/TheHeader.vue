@@ -1,18 +1,39 @@
 <script>
     export default {
         data(){
-            return{}
+            return{
+                linksHeader: [
+                    {label: 'Inicio', link: ''},
+                    {label: 'Quem Somos', link: ''},
+                    {label: 'Programação', link: ''},
+                    {label: 'Contato', link: ''},
+                ]
+            }
         }
     }
 </script>
 
 <template>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Proin imperdiet dolor mi, id pretium risus ullamcorper at. 
-    Cras ultricies urna in libero ultrices vehicula. Mauris nulla risus,
-    tincidunt eu nibh euismod, fermentum maximus magna. Donec eget libero luctus, 
-    tincidunt nibh a, semper tortor. Aliquam vestibulum mattis tempor.
-    Maecenas efficitur malesuada risus sit amet semper. Fusce quis erat ipsum. 
+    <div>
+        <div id="headerContainerWhite">
+            <div id="headerBar">
+                <div id="logoContainer">
+                    <img src="/images/Logo.jpg"/>
+                </div>
+                <ul id="containerLinks">
+                    <li v-for="link in linksHeader" class="container-links-header">
+                        <a href="" class="links-header">{{ link.label }}</a>
+                    </li>
+                    <li id="linkHeaderSubscribe">
+                        Inscrever-se
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img src="/images/fundoheader.png" />
+            </div>
+        </div>
+    </div>
 </template>
 
 <script setup>

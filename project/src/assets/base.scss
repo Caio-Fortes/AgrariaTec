@@ -1,9 +1,9 @@
 //Palet Colors Variables
 
-$White: rgb(241 241 241 / 92%);
+$White: #ffffff;
 $Black: #000000;
 $BlackGreen: #366639;
-$Yellow: #E0E18A;
+$Yellow: #dddf7e;
 $Blue: #207a8633;
 
 // Default fonts
@@ -38,6 +38,16 @@ $Blue: #207a8633;
     src: url('/fonts/outfit/OutfitExtraBold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'bold-inter';
+    src: url('/fonts/inter/Inter-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'semibold-inter';
+    src: url('/fonts/inter/Inter-SemiBold.otf') format('truetype');
+}
+
 html{
     scroll-behavior: smooth;
     height: 100%;
@@ -49,6 +59,8 @@ body{
     height: 100%;
     width: 100%;
     transition: all 0.5s ease;
+    //teste
+    background-color: $BlackGreen;
 }
 
 li{
