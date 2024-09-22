@@ -1,18 +1,3 @@
-<script>
-    export default {
-        data(){
-            return{
-                linksHeader: [
-                    {label: 'Inicio', link: ''},
-                    {label: 'Quem Somos', link: ''},
-                    {label: 'Programação', link: ''},
-                    {label: 'Contato', link: ''},
-                ]
-            }
-        }
-    }
-</script>
-
 <template>
     <div>
         <div id="headerContainerWhite">
@@ -37,6 +22,17 @@
     </div>
 </template>
 
-<script setup>
-
+<script>
+    export default {
+        data(){
+            return{
+                linksHeader: [
+                    {label: 'Inicio', link: ''},
+                    {label: 'Quem Somos', link: ''},
+                    {label: 'Programação', link: ''},
+                    {label: 'Contato', link: ''},
+                ]
+            }
+        }
+    }
 </script>

@@ -77,8 +77,70 @@ img {
   height: 100%;
 }
 
+h1 {
+  font-size: 36px;
+  font-family: "bold-InriaSans";
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "regular-InriaSans";
+}
+
 p {
-  font-size: 12px;
+  font-size: 18px;
+  font-family: "regular-InriaSans";
+  color: #666666;
+}
+
+.img-radius {
+  border-radius: 20px;
+}
+
+.flex {
+  display: flex;
+  margin: 10px;
+}
+
+.container-image-text-default {
+  display: flex;
+  margin: 30px 40px 30px 40px;
+  position: relative;
+}
+
+.images-left {
+  width: 45%;
+  margin-right: 5pc;
+}
+
+.text-right {
+  width: 50%;
+}
+
+.container-icon-text {
+  width: 356px;
+  height: 356px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.yellow-background {
+  background-color: #E0E18A;
+}
+
+.green-background {
+  background-color: #366639;
+}
+
+.spacing-content {
+  margin: 10px;
+}
+
+.white-text-color {
+  color: #ffffff;
 }
 
 #headerContainerWhite {
@@ -127,7 +189,7 @@ p {
 }
 
 .links-header:hover {
-  color: #dddf7e;
+  color: #E0E18A;
   transition: all 0.2s ease;
 }
 
@@ -135,7 +197,7 @@ p {
   font-family: "semibold-inter";
   font-size: 14px;
   color: #366639;
-  border: solid 2px #dddf7e;
+  border: solid 2px #E0E18A;
   padding: 10px;
   border-radius: 17px;
   margin-right: 20px;
@@ -153,7 +215,7 @@ p {
 
 #containerCapas {
   width: 100%;
-  height: 34vw;
+  height: 37vw;
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -187,7 +249,6 @@ p {
   position: absolute;
   top: 50%;
   width: 100%;
-  transform: translateY(-50%);
   z-index: 1;
 }
 
@@ -210,7 +271,39 @@ p {
 }
 
 .buttons-carrossel:hover {
-  border: 1px solid #dddf7e;
-  color: #dddf7e;
+  border: 1px solid #E0E18A;
+  color: #E0E18A;
   transition: all 0.4s ease;
+}
+
+#numQuemSomos {
+  font-size: 64px;
+  font-family: "regular-InriaSans";
+  color: #366639;
+  font-weight: 800;
+}
+
+.div-separator {
+  background-color: rgba(158, 158, 158, 0.4117647059);
+  border-radius: 10px;
+  width: 1px;
+  height: 64px;
+  margin: 0px 50px;
+}
+
+#textQuemSomos {
+  font-size: 24px;
+  font-family: "bold-InriaSans";
+  color: black;
+  font-weight: 800;
+}
+
+.icon-image-container {
+  width: 80px;
+}
+
+.cardsQuemSomos {
+  justify-content: center;
+  position: relative;
+  margin-top: -100px;
 }/*# sourceMappingURL=main.css.map */

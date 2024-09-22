@@ -77,6 +77,68 @@ img {
   height: 100%;
 }
 
+h1 {
+  font-size: 36px;
+  font-family: "bold-InriaSans";
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "regular-InriaSans";
+}
+
 p {
-  font-size: 12px;
+  font-size: 18px;
+  font-family: "regular-InriaSans";
+  color: #666666;
+}
+
+.img-radius {
+  border-radius: 20px;
+}
+
+.flex {
+  display: flex;
+  margin: 10px;
+}
+
+.container-image-text-default {
+  display: flex;
+  margin: 30px 40px 30px 40px;
+  position: relative;
+}
+
+.images-left {
+  width: 45%;
+  margin-right: 5pc;
+}
+
+.text-right {
+  width: 50%;
+}
+
+.container-icon-text {
+  width: 356px;
+  height: 356px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.yellow-background {
+  background-color: #E0E18A;
+}
+
+.green-background {
+  background-color: #366639;
+}
+
+.spacing-content {
+  margin: 10px;
+}
+
+.white-text-color {
+  color: #ffffff;
 }/*# sourceMappingURL=base.css.map */

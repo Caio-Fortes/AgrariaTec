@@ -72,7 +72,7 @@
 
 #containerCapas {
   width: 100%;
-  height: 34vw;
+  height: 37vw;
   overflow-x: hidden;
   overflow-y: auto; 
   scroll-behavior: smooth;
@@ -105,7 +105,6 @@
   position: absolute;
   top: 50%;
   width: 100%;
-  transform: translateY(-50%);
   z-index: 1;
 }
 
@@ -125,11 +124,42 @@
   height: 45px;
   cursor: pointer;
   margin: 20px;
-
 }
 
 .buttons-carrossel:hover {
   border: 1px solid $Yellow;
   color: $Yellow;
   transition: all 0.4s ease;
+}
+
+#numQuemSomos{
+  font-size: 64px;
+  font-family: 'regular-InriaSans';
+  color: $BlackGreen;
+  font-weight: 800;
+}
+
+.div-separator{
+  background-color: #9e9e9e69;
+  border-radius: 10px;
+  width: 1px;
+  height: 64px;
+  margin: 0px 50px;
+}
+
+#textQuemSomos{
+  font-size: 24px;
+  font-family: 'bold-InriaSans';
+  color: black;
+  font-weight: 800;
+}
+
+.icon-image-container{
+  width: 80px;
+}
+
+.cardsQuemSomos{
+  justify-content: center;
+  position: relative;
+  margin-top: -100px;
 }
