@@ -29,10 +29,11 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div> 
                 <img src="/images/fundoheader.png" />
             </div>
         </div>
+        <div id="headerContainerTransparent"></div>
     </div>
 </template>
 
