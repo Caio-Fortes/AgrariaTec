@@ -163,3 +163,39 @@
   position: relative;
   margin-top: -100px;
 }
+
+#containerProgramacao{
+  margin-top: 70px;
+  background: #207a8617;
+  padding: 36px 0px;
+}
+
+#textCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  grid-column-start: 2;
+}
+
+.image-cards{
+  width: 10rem;
+  height: 9rem;
+}
+
+.titles-container{
+  margin: 18px 0px;
+}
+
+.title-cards{
+  font-size: 26px;
+  font-family: 'bold-InriaSans';
+  margin-bottom: 0.5rem;
+}
+
+.subtitle-cards{
+  font-size: 18px;
+  font-family: 'regular-InriaSans';
+  margin-bottom: 0.5rem;
+}

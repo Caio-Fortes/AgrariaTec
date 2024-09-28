@@ -152,6 +152,14 @@ p{
 .green-background{
     background-color: $BlackGreen;
 }
+
+.green-color{
+    color: $BlackGreen;
+}
+
+.yellow-color{
+    color: $Yellow;
+}
   
 .spacing-content{
     margin: 10px;
@@ -160,3 +168,41 @@ p{
 .white-text-color{
     color: $White;
 }
+
+.set-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.column-1{
+    grid-column-start: 1;
+}
+
+.column-2{
+    grid-column-start: 2;
+}
+
+.column-3{
+    grid-column-start: 3;
+}
+
+.set-flex{
+    display: flex;
+    margin: 20px 50px;
+}
+
+.cards{
+    margin: 0.5rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+}
+
