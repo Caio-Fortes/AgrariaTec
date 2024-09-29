@@ -259,6 +259,10 @@ p {
   transition: all 0.2s ease;
 }
 
+.link-selected {
+  color: #E0E18A;
+}
+
 #linkHeaderSubscribe {
   font-family: "semibold-inter";
   font-size: 0.8rem;

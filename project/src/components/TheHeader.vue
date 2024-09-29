@@ -2,13 +2,16 @@
     <div id="headerContainerWhite" :class="headerFixedStyle">
         <div id="headerBar">
             <div id="logoContainer">
-                <img src="/images/logo.png"/>
+                <img src="/images/logo.png" />
             </div>
             <ul id="containerLinks">
-                <li v-for="link in linksHeader" class="container-links-header">
-                    <a href="" class="links-header">{{ link.label }}</a>
+                <li v-for="(link, index) in linksHeader" :key="index" class="container-links-header">
+                    <a 
+                        href="#" @click.prevent="scrollToSection(link.link, link.offset)" 
+                        class="links-header">{{ link.label }}
+                    </a>
                 </li>
-                <li id="linkHeaderSubscribe">
+                <li id="linkHeaderSubscribe" @click="buttonInscrever">
                     Inscrever-se
                 </li>
             </ul>
@@ -20,37 +23,47 @@
 </template>
 
 <script>
-    export default {
-        data(){
-            return {
-                headerFixedStyle: 'default',
-                linksHeader: [
-                    {label: 'Inicio', link: ''},
-                    {label: 'Quem Somos', link: ''},
-                    {label: 'Programação', link: ''},
-                    {label: 'Contato', link: ''},
-                ]
+export default {
+    data() {
+        return {
+            headerFixedStyle: 'default',
+            linksHeader: [
+                { label: 'Inicio', link: 'inicio', offset: 0 },
+                { label: 'Quem Somos', link: 'quem-somos', offset: 110 },
+                { label: 'Programação', link: 'programacao', offset: 90 },
+                { label: 'Contato', link: 'contato', offset: 110 },
+            ]
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            const element = document.querySelector('.images-capas-container');
+            const rect = element.getBoundingClientRect();
+            if (window.scrollY > (rect.height / 2)) {
+                this.headerFixedStyle = 'fixed';
+            } else if (window.scrollY > (rect.height - 400)) {
+                this.headerFixedStyle = 'scrolled';
+            } else {
+                this.headerFixedStyle = 'default';
             }
         },
-        mounted() {
-            window.addEventListener('scroll', this.handleScroll);
+        scrollToSection(sectionId, offset) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                const targetPosition = sectionPosition - offset;
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            }
         },
-        beforeDestroy() {
-            window.removeEventListener('scroll', this.handleScroll);
-        },
-        methods: {
-            handleScroll() {
-                const element = document.querySelector('.images-capas-container');
-                const rect = element.getBoundingClientRect();
-                if(window.scrollY > (rect.height / 2)){
-                    this.headerFixedStyle = 'fixed';
-                }
-                else if(window.scrollY > (rect.height - 400)){
-                    this.headerFixedStyle = 'scrolled';
-                } else{
-                    this.headerFixedStyle = 'default';
-                }
-            },
+        buttonInscrever(){
+            window.open('https://forms.gle/g8Xit6GvF5TMXvUp8', '_blank');
         }
     }
+}
 </script>
