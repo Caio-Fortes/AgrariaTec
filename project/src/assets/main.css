@@ -191,31 +191,52 @@ p {
 #headerContainerWhite {
   background-color: #ffffff;
   width: 100%;
-  height: 70px;
-  position: fixed;
-  z-index: 10;
+  height: 4rem;
 }
 
-#headerContainerTransparent {
-  background-color: #ffffff;
-  width: 100%;
-  height: 65px;
+.default {
+  position: relative;
+  z-index: 10;
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.scrolled {
+  position: relative;
+  z-index: 10;
+  transform: translateY(-6rem);
+  transition: transform 0.4s ease-in-out;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 10;
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #headerBar {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  height: 96%;
+  height: 100%;
+  justify-content: space-between;
   position: relative;
   top: 10px;
-  justify-content: space-between;
+}
+
+#backgroundHeader {
+  z-index: 1;
+  position: relative;
+  top: 0rem;
 }
 
 #logoContainer {
-  width: 70px;
-  height: 50px;
-  margin-left: 15px;
+  width: 12rem;
+  margin-left: 1rem;
 }
 
 #containerLinks {
@@ -224,7 +245,7 @@ p {
 }
 
 .container-links-header {
-  margin-right: 45px;
+  margin-right: 2.5rem;
 }
 
 .links-header {
@@ -240,22 +261,41 @@ p {
 
 #linkHeaderSubscribe {
   font-family: "semibold-inter";
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #366639;
   border: solid 2px #E0E18A;
-  padding: 10px;
-  border-radius: 17px;
-  margin-right: 20px;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: transparent;
+  transition: all 0.4s ease;
+}
+
+#linkHeaderSubscribe::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #366639;
+  z-index: -1;
+  transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+  transform: rotate(60deg);
+}
+
+#linkHeaderSubscribe:hover::before {
+  width: 300%;
+  height: 300%;
+  top: -100%;
+  left: -100%;
 }
 
 #linkHeaderSubscribe:hover {
   color: #ffffff;
-  border: solid 2px #366639;
-  background-color: #366639;
-  padding: 10px;
-  border-radius: 17px;
-  margin-right: 20px;
-  transition: all 0.4s ease;
 }
 
 #containerCapas {
