@@ -11,5 +11,5 @@ import Contato from './components/Contato.vue';
   <Capa />
   <QuemSomos />
   <ProgramacaoEvento />
-  <Contato />
+  <Contato /> 
 </template>

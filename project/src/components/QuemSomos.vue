@@ -2,50 +2,30 @@
     <section id="quem-somos">
         <div class="container-image-text-default">
             <div class="images-left">
-                <img src="/images/agronoma.jpg" class="img-radius"/>
+                <img src="/images/fazendeiro.jpg" class="img-radius"/>
             </div>
             <div class="text-right">
                 <h1>Quem Somos</h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+                <h4>O espaço para inovação e informação.</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Proin imperdiet dolor mi, id pretium risus ullamcorper at. 
-                    Cras ultricies urna in libero ultrices vehicula. Mauris nulla risus, 
-                    tincidunt eu nibh euismod, fermentum maximus magna. Donec eget libero luctus, 
-                    tincidunt nibh a, semper tortor. Aliquam vestibulum mattis tempor. 
-                    Maecenas efficitur malesuada risus sit amet semper. Fusce quis erat ipsum. 
+                    O AgrariaTec é um amplo e agradável espaço de integração de vários segmentos 
+                    que compõem e integram: Informação, inovação, produtos e serviços de diversos 
+                    segmentos empresariais do agronegócio brasileiro, principalmente aqueles 
+                    inseridos nos conceitos atuais da agricultura conectada, onde mais do que ter 
+                    vontade de inovar, é preciso que a inovação faça sentido. 
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Proin imperdiet dolor mi, id pretium risus ullamcorper at. 
-                    Cras ultricies urna in libero ultrices vehicula. Mauris nulla risus, 
-                    tincidunt eu nibh euismod, fermentum maximus magna. Donec eget libero luctus, 
-                    tincidunt nibh a, semper tortor. 
+                    Porque era necessário, em nossa região, um evento do agronegócio brasileiro 
+                    caracterizado pela inovação e difusão tecnológica de máquinas e produtos agrícolas.
+                </p>
+                <p>
+                    Porque devemos estar conectados a essa aceleração abrupta na revolução agro 4.0,
+                    com aderência cada vez maior de tecnologias dentro e fora do campo de produção.
                 </p>
                 <div class="flex">
-                    <div id="numQuemSomos">25M</div>
+                    <div id="numQuemSomos">4.0</div>
                     <div class="div-separator"></div>
-                    <div id="textQuemSomos">lorem <br />ipsum</div>
-                </div>
-            </div>
-        </div>
-        <div class="flex cardsQuemSomos">
-            <div class="container-icon-text yellow-background" style="margin-right: 32px;">
-                <div class="spacing-content">
-                    <div class="icon-image-container">
-                        <img src="/images/icons/planta.png" />
-                    </div>
-                    <h1>lorem ipsum dolor sit met</h1>
-                    <p>lorem ipsum dolor sit met</p>
-                </div>
-            </div>
-            <div class="container-icon-text green-background">
-                <div class="spacing-content">
-                    <div class="icon-image-container">
-                        <img src="/images/icons/milho.png" />
-                    </div>
-                    <h1 class="white-text-color">lorem ipsum dolor sit met</h1>
-                    <p class="white-text-color">lorem ipsum dolor sit met</p>
+                    <div id="textQuemSomos">Inovação e<br />Agronegócio</div>
                 </div>
             </div>
         </div>
