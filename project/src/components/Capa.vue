@@ -21,7 +21,7 @@
 export default {
     data() {
         return {
-            imgCapas: ['banner.JPG', 'trator.jpg', 'fazenda.jpg', 'trigo.jpg']
+            imgCapas: ['banner.JPG ', 'trator.jpg', 'fazenda.jpg', 'trigo.jpg']
         }
     },
     methods: {
