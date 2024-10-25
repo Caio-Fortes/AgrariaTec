@@ -1,8 +1,20 @@
-//desktop
-@media (min-width: 901px) {
-  @import './desktop/style.scss';
+
+//Desktop
+
+//laptop
+@media (min-width: 768px) and (max-width: 1024px) {
+  @import './desktop/laptop/styles.scss';
 }
 
+//laptop Large
+@media (min-width: 1024px) and (max-width: 1440px) {
+  @import './desktop/laptop/styles.scss';
+}
+
+//4K
+@media (min-width: 1440px) and (max-width: 2560px) {
+  @import './desktop/laptop/styles.scss';
+}
 
 //Mobile
 @media (min-width: 601px) and (max-width: 900px) {

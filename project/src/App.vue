@@ -9,7 +9,7 @@ import Contato from './components/Contato.vue';
 <template>
   <TheHeader />
   <Capa />
-  <QuemSomos />
+  <!-- <QuemSomos />
   <ProgramacaoEvento />
-  <Contato /> 
+  <Contato />  -->
 </template>
