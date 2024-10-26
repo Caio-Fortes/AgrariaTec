@@ -74,19 +74,6 @@ export default {
     display: none;
 }
 
-.dark-overlay {
-    content: "";
-    background: #000000fc;
-    height: 100%;
-    left: 0;
-    opacity: 0.4;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    transition: all 0.35s ease-in-out;
-}
-
 .images-capas-container {
     flex: 0 0 100%;
     position: relative;

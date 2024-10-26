@@ -126,25 +126,22 @@ p{
     border-radius: 20px;
 }
 
+.dark-overlay {
+    content: "";
+    background: #000000fc;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.35s ease-in-out;
+}
+
 .flex{
     display: flex;
     margin: 10px;
-}
-
-.container-image-text-default{
-    display: flex;
-    margin: 30px 40px 30px 40px;
-    position: relative;
-    height: 50vw;
-}
-  
-.images-left{
-    width: 45%;
-    margin-right: 5pc;
-}
-
-.text-right{
-    width: 50%;
 }
 
 .container-icon-text{

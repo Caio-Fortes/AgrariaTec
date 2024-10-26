@@ -4,12 +4,15 @@ import Capa from './components/Capa.vue';
 import QuemSomos from './components/QuemSomos.vue';
 import ProgramacaoEvento from './components/Programacao.vue';
 import Contato from './components/Contato.vue';
+import ImageText from './components/ImageText.vue';
 </script>
 
 <template>
   <!-- <TheHeader /> -->
   <Capa />
-  <!-- <QuemSomos />
-  <ProgramacaoEvento />
+  <ImageText />
+
+  <!-- <QuemSomos /> -->
+  <!--  <ProgramacaoEvento />
   <Contato />  -->
 </template>
