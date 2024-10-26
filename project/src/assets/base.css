@@ -141,11 +141,11 @@ p {
 }
 
 .green-background {
-  background-color: #366639;
+  background-color: hwb(124 21% 60%);
 }
 
 .green-color {
-  color: #366639;
+  color: hwb(124 21% 60%);
 }
 
 .yellow-color {
