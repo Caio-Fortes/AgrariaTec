@@ -58,14 +58,11 @@
 <style scoped>
 * {
     box-sizing: border-box;
-    /* Define box-sizing para todos os elementos */
 }
 
 body {
     margin: 0;
-    /* Remove margens padrão do corpo */
     overflow-x: hidden;
-    /* Evita overflow horizontal */
 }
 
 .set-grid {
@@ -103,7 +100,6 @@ body {
 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .set-flex {
         flex-direction: column;
@@ -128,6 +124,43 @@ body {
             max-width: 250px;
         }
 
+    }
+}
+
+@media (max-width: 400px) {
+
+    .cards {
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .titles-container {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .cards {
+        padding: 5px;
+        text-align: center;
+        overflow: hidden;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .titles-container {
+        font-size: 14px;
+
+        .image-cards img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            margin: 0;
+        }
     }
 }
 </style>
