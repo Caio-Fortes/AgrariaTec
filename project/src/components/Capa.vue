@@ -4,16 +4,14 @@
             <div v-for="capa in CarrosselContent" :key="capa" class="images-capas-container">
                 <div class="dark-overlay"></div>
                 <img :src="'/images/capas/' + capa.img" />
-<!-- 
                 <div class="text-overlay">
                     <h2>{{ capa.title }}</h2>
                     <ul>
-                        <li style="list-style-type: disclosure-closed;" class="pWhite">
+                        <li class="pWhite">
                             {{ capa.descricao }}
                         </li>
                     </ul>
-                </div> -->
-
+                </div>
                 <div class="container-buttons">
                     <button @click="buttonLeftRight('left')" class="buttons-carrossel">
                         <i class="fa-solid fa-angle-left"></i>
@@ -33,7 +31,7 @@ export default {
         return {
             CarrosselContent: [
                 { img: 'banner.JPG', title: '', descricao: '' },
-                { img: 'trator.jpg', title: 'Os Números da Primeira Edição', descricao: 'Presença de quase 20 cidades.' },
+                { img: 'trator.jpg', title: '', descricao: '' },
                 { img: 'fazenda.jpg', title: '', descricao: '' },
                 { img: 'trigo.jpg', title: '', descricao: '' }
             ]
