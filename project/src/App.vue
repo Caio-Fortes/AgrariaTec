@@ -1,8 +1,9 @@
 <script setup>
+import Separator from './components/Separator.vue';
 import TheHeader from './components/TheHeader.vue';
 import Capa from './components/Capa.vue';
 import QuemSomos from './components/QuemSomos.vue';
-import Separator from './components/Separator.vue';
+import Pesquisas from './components/Pesquisas.vue';
 import ProgramacaoEvento from './components/Programacao.vue';
 import Contato from './components/Contato.vue';
 </script>
@@ -12,7 +13,10 @@ import Contato from './components/Contato.vue';
   <Capa />
   <QuemSomos />
   <Separator />
-  <QuemSomos />
-  <!--  <ProgramacaoEvento />
+  <Pesquisas />
+  <Separator />
+  <!--  
+  <ProgramacaoEvento />
+  <Parceiros />
   <Contato />  -->
 </template>

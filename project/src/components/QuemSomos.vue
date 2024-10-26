@@ -5,18 +5,18 @@
                 <h1 class="title-component">Quem Somos</h1>
                 <h4 class="subtitle-component">O espaço para inovação e informação.</h4>
                 <p class="responsive-text">
-                    O AgrariaTec é um amplo e agradável espaço de integração de vários segmentos
-                    que compõem e integram: Informação, inovação, produtos e serviços de diversos
+                    <strong>O AgrariaTec é um amplo e agradável espaço de integração de vários segmentos
+                    que compõem e integram:</strong> Informação, inovação, produtos e serviços de diversos
                     segmentos empresariais do agronegócio brasileiro, principalmente aqueles
-                    inseridos nos conceitos atuais da agricultura conectada, onde mais do que ter
-                    vontade de inovar, é preciso que a inovação faça sentido.
+                    inseridos nos conceitos atuais da agricultura conectada, <strong>onde mais do que ter
+                    vontade de inovar, é preciso que a inovação faça sentido.</strong>
                 </p>
                 <p class="responsive-text">
-                    Porque era necessário, em nossa região, um evento do agronegócio brasileiro
+                    <strong>Porque era necessário, em nossa região, um evento do agronegócio brasileiro</strong>
                     caracterizado pela inovação e difusão tecnológica de máquinas e produtos agrícolas.
                 </p>
                 <p class="responsive-text">
-                    Porque devemos estar conectados a essa aceleração abrupta na revolução agro 4.0,
+                    <strong>Porque devemos estar conectados a essa aceleração abrupta na revolução agro 4.0</strong>,
                     com aderência cada vez maior de tecnologias dentro e fora do campo de produção.
                 </p>
             </div>
@@ -31,7 +31,6 @@
         </div>
     </section>
 </template>
-
 <script>
 export default {
     data() {
@@ -40,10 +39,10 @@ export default {
                 "/images/plantacao.jpg",
                 "/images/plantas.jpg",
                 "/images/agronoma.jpg",
-                "/images/fazendeiro.jpg",
             ],
             currentIndex: 0,
             fading: false,
+            intervalId: null,
         };
     },
     methods: {
@@ -52,6 +51,9 @@ export default {
             setTimeout(() => {
                 this.currentIndex = index;
                 this.fading = false;
+
+                clearInterval(this.intervalId);
+                this.startAutoSlide();
             }, 500);
         },
         nextSlide() {
@@ -62,14 +64,21 @@ export default {
             const prevIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
             this.goToSlide(prevIndex);
         },
+        startAutoSlide() {
+            this.intervalId = setInterval(() => {
+                this.nextSlide();
+            }, 4000);
+        },
     },
     mounted() {
-        setInterval(() => {
-            this.nextSlide();
-        }, 4000);
+        this.startAutoSlide();
+    },
+    beforeDestroy() {
+        clearInterval(this.intervalId);
     },
 };
 </script>
+
 
 <style scoped>
 @media (max-width: 900px) {
@@ -89,7 +98,7 @@ export default {
         margin-top: 15px;
     }
 
-    .title-component{
+    .title-component {
         font-size: 8vw;
         margin-top: 0px;
     }
@@ -123,7 +132,7 @@ export default {
         height: 100%;
     }
 
-    .title-component{
+    .title-component {
         margin-top: 1rem;
         font-size: 4vw;
     }
