@@ -4,19 +4,23 @@
             <div id="logoContainer">
                 <img src="/images/logo.png" />
             </div>
-            <ul id="containerLinks">
+
+            <button @click="toggleMenu" id="menuToggle" class="hamburger-btn">
+                &#9776;
+            </button>
+
+            <ul id="containerLinks" :class="{ 'open': menuOpen }">
                 <li v-for="(link, index) in linksHeader" :key="index" class="container-links-header">
-                    <a 
-                        href="#" @click.prevent="scrollToSection(link.link, link.offset)" 
-                        class="links-header">{{ link.label }}
+                    <a href="#" @click.prevent="scrollToSection(link.link, link.offset)" class="links-header">{{
+                        link.label }}
                     </a>
                 </li>
-                <li id="linkHeaderSubscribe" @click="buttonInscrever">
+                <li class="container-links-header" id="linkHeaderSubscribe" @click="buttonInscrever">
                     Inscrever-se
                 </li>
             </ul>
         </div>
-        <div id="backgroundHeader"> 
+        <div id="backgroundHeader">
             <img src="/images/fundoheader.png" />
         </div>
     </div>
@@ -26,6 +30,7 @@
 export default {
     data() {
         return {
+            menuOpen: false,
             headerFixedStyle: 'default',
             linksHeader: [
                 { label: 'Inicio', link: 'inicio', offset: 0 },
@@ -61,9 +66,60 @@ export default {
                 window.scrollTo({ top: targetPosition, behavior: 'smooth' });
             }
         },
-        buttonInscrever(){
+        buttonInscrever() {
             window.open('https://forms.gle/g8Xit6GvF5TMXvUp8', '_blank');
-        }
+        },
+        toggleMenu() {
+            this.menuOpen = !this.menuOpen;
+        },
     }
 }
 </script>
+
+<style scoped>
+.hamburger-btn {
+    display: none;
+}
+
+#containerLinks {
+    display: flex;
+    text-align: center;
+    margin-top: -11px;
+}
+
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #containerLinks {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    #containerLinks.open {
+        display: flex;
+    }
+
+    #backgroundHeader {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    #backgroundHeader {
+        display: block;
+    }
+}
+</style>

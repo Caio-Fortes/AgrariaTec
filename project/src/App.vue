@@ -8,7 +8,7 @@ import Contato from './components/Contato.vue';
 </script>
 
 <template>
-  <!-- <TheHeader /> -->
+  <TheHeader />
   <Capa />
   <QuemSomos />
   <Separator />
