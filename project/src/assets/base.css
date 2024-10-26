@@ -82,6 +82,11 @@ h1 {
   font-family: "bold-InriaSans";
 }
 
+h2 {
+  font-size: 30px;
+  font-family: "bold-InriaSans";
+}
+
 h4 {
   font-size: 20px;
   font-family: "regular-InriaSans";
@@ -91,6 +96,12 @@ p {
   font-size: 18px;
   font-family: "regular-InriaSans";
   color: #666666;
+}
+
+.pWhite {
+  font-size: 18px;
+  font-family: "regular-InriaSans";
+  color: #ffffff;
 }
 
 .img-radius {

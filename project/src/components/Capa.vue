@@ -1,12 +1,22 @@
 <template>
     <section id="inicio">
         <div id="containerCapas" ref="containerCapas">
-            <div v-for="capa in imgCapas" :key="capa" class="images-capas-container">
-                <img :src="'/images/capas/'+capa" />
+            <div v-for="capa in CarrosselContent" :key="capa" class="images-capas-container">
                 <div class="dark-overlay"></div>
-                <div id="containerButtons">
+                <img :src="'/images/capas/' + capa.img" />
+<!-- 
+                <div class="text-overlay">
+                    <h2>{{ capa.title }}</h2>
+                    <ul>
+                        <li style="list-style-type: disclosure-closed;" class="pWhite">
+                            {{ capa.descricao }}
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="container-buttons">
                     <button @click="buttonLeftRight('left')" class="buttons-carrossel">
-                        <i class="fa-solid fa-angle-left"></i>   
+                        <i class="fa-solid fa-angle-left"></i>
                     </button>
                     <button @click="buttonLeftRight('right')" class="buttons-carrossel">
                         <i class="fa-solid fa-angle-right"></i>
@@ -21,16 +31,134 @@
 export default {
     data() {
         return {
-            imgCapas: ['banner.JPG ', 'trator.jpg', 'fazenda.jpg', 'trigo.jpg']
+            CarrosselContent: [
+                { img: 'banner.JPG', title: '', descricao: '' },
+                { img: 'trator.jpg', title: 'Os Números da Primeira Edição', descricao: 'Presença de quase 20 cidades.' },
+                { img: 'fazenda.jpg', title: '', descricao: '' },
+                { img: 'trigo.jpg', title: '', descricao: '' }
+            ]
         }
     },
     methods: {
-        buttonLeftRight(buttonSelected){
+        buttonLeftRight(direction) {
             const container = this.$refs.containerCapas;
-            const width = container.clientWidth;
-            buttonSelected === 'left' ? container.scrollLeft -= width + 12
-            : container.scrollLeft += width + 20;
+            const itemWidth = container.firstElementChild.clientWidth;
+            const scrollAmount = itemWidth;
+
+            container.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
         },
     }
 }
 </script>
+
+<style scoped>
+#inicio {
+    overflow-x: hidden;
+}
+
+#containerCapas {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    scroll-behavior: smooth;
+    max-height: 56vw;
+    overflow-y: hidden;
+    gap: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+#containerCapas::-webkit-scrollbar {
+    display: none;
+}
+
+.dark-overlay {
+    content: "";
+    background: #000000fc;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.35s ease-in-out;
+}
+
+.images-capas-container {
+    flex: 0 0 100%;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 4rem;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.container-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 10;
+}
+
+@media (max-width: 500px) {
+    .buttons-carrossel {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        padding: 8px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .buttons-carrossel {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 8px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        margin: 20px;
+    }
+}
+
+#containerCapas img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
