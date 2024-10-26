@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="quem-somos">
         <div class="container-image-text-default">
             <div class="text-right">
                 <h1 class="title-component">Quem Somos</h1>

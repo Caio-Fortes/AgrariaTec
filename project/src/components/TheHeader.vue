@@ -49,12 +49,12 @@ export default {
     methods: {
         handleScroll() {
             const element = document.querySelector('.images-capas-container');
-            const rect = element.getBoundingClientRect();
+            const rect = element ? element.getBoundingClientRect() : { height: 0 };
             if (window.scrollY > (rect.height / 2)) {
                 this.headerFixedStyle = 'fixed';
-            } else if (window.scrollY > (rect.height - 400)) {
+            } /* else if (window.scrollY > (rect.height - 400)) {
                 this.headerFixedStyle = 'scrolled';
-            } else {
+            } */ else {
                 this.headerFixedStyle = 'default';
             }
         },
@@ -77,6 +77,14 @@ export default {
 </script>
 
 <style scoped>
+#headerContainerWhite {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: white;
+}
 .hamburger-btn {
     display: none;
 }
@@ -84,10 +92,14 @@ export default {
 #containerLinks {
     display: flex;
     text-align: center;
-    margin-top: -11px;
+    margin-right: 50px;
 }
 
 @media (max-width: 768px) {
+    #logoContainer {
+        display: block; 
+        margin-left: 10px;
+    }
     .hamburger-btn {
         display: block;
         background: none;
@@ -106,6 +118,7 @@ export default {
         width: 100%;
         align-items: center;
         padding: 10px 0;
+        margin-top: -11px;
     }
 
     #containerLinks.open {

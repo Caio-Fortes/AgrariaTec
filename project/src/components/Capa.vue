@@ -54,6 +54,7 @@ export default {
 
 <style scoped>
 #inicio {
+    margin-top: 80px;
     overflow-x: hidden;
 }
 

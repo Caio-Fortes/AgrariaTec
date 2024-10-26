@@ -10,6 +10,6 @@ import QuemSomos from './components/QuemSomos.vue';
   <TheHeader />
   <Capa />
   <QuemSomos />
-  <!--  <ProgramacaoEvento />
-  <Contato />  -->
+<!--   <ProgramacaoEvento />
+  <Contato /> -->
 </template>
