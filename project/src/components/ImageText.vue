@@ -3,7 +3,7 @@
         <div class="container-image-text-default">
             <div class="text-right">
                 <h1 class="title-component">Quem Somos</h1>
-                <h4>O espaço para inovação e informação.</h4>
+                <h4 class="subtitle-component">O espaço para inovação e informação.</h4>
                 <p class="responsive-text">
                     O AgrariaTec é um amplo e agradável espaço de integração de vários segmentos
                     que compõem e integram: Informação, inovação, produtos e serviços de diversos
@@ -14,6 +14,8 @@
                 <p class="responsive-text">
                     Porque era necessário, em nossa região, um evento do agronegócio brasileiro
                     caracterizado pela inovação e difusão tecnológica de máquinas e produtos agrícolas.
+                </p>
+                <p class="responsive-text">
                     Porque devemos estar conectados a essa aceleração abrupta na revolução agro 4.0,
                     com aderência cada vez maior de tecnologias dentro e fora do campo de produção.
                 </p>
@@ -71,7 +73,7 @@ export default {
 @media (max-width: 900px) {
     .container-image-text-default {
         display: flex;
-        margin: 30px 40px;
+        margin: 0px 40px;
         position: relative;
         height: 50vw;
         min-height: 300px;
@@ -81,12 +83,23 @@ export default {
     .images-left {
         width: 100%;
         height: 100%;
+        margin-top: 15px;
+    }
+
+    .title-component{
+        font-size: 8vw;
+    }
+
+    .subtitle-component {
+        font-size: 5vw;
+        line-height: 1.5;
     }
 
     .responsive-text {
-        font-size: 1.5vw;
+        font-size: 3.5vw;
         line-height: 1.5;
     }
+
 }
 
 @media (min-width: 900px) {
@@ -106,10 +119,21 @@ export default {
         height: 100%;
     }
 
+    .title-component{
+        margin-top: 1rem;
+        font-size: 4vw;
+    }
+
+    .subtitle-component {
+        font-size: 2.3vw;
+        line-height: 1.5;
+    }
+
     .responsive-text {
         font-size: 1.5vw;
         line-height: 1.5;
     }
+
 }
 
 .img-radius {
