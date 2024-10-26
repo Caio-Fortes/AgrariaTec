@@ -7,7 +7,7 @@ import QuemSomos from './components/QuemSomos.vue';
 </script>
 
 <template>
-  <!-- <TheHeader /> -->
+  <TheHeader />
   <Capa />
   <QuemSomos />
   <!--  <ProgramacaoEvento />
