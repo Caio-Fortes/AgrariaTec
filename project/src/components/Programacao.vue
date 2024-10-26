@@ -2,14 +2,14 @@
     <section id="programacao">
         <div id="containerProgramacao">
             <div class="set-grid">
-                <div id="textCenter"> 
+                <div id="textCenter">
                     <h4 class="green-color" style="margin-bottom: 0px;">
-                        Atrações do Evento 
+                        Atrações do Evento
                     </h4>
                     <h1>O que vou encontrar?</h1>
                 </div>
                 <div class="column-3">
-                    <img src="/images/home.png"/>
+                    <img src="/images/home.png" />
                 </div>
             </div>
             <div class="set-flex">
@@ -54,4 +54,80 @@
         </div>
     </section>
 </template>
-  
+
+<style scoped>
+* {
+    box-sizing: border-box;
+    /* Define box-sizing para todos os elementos */
+}
+
+body {
+    margin: 0;
+    /* Remove margens padrão do corpo */
+    overflow-x: hidden;
+    /* Evita overflow horizontal */
+}
+
+.set-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 100vw;
+}
+
+.set-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100vw;
+}
+
+.cards {
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 300px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1090px) {
+
+    .cards {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .column-1.cards:nth-child(3) {
+        flex-basis: 100%;
+        margin: 0 auto 10px;
+        max-width: 100%;
+    }
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .set-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        flex-basis: auto;
+    }
+
+    .column-3 img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 480px) {
+        .column-3 img {
+            max-width: 250px;
+        }
+
+    }
+}
+</style>
