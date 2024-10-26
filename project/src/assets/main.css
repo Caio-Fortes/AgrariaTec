@@ -92,6 +92,11 @@ h4 {
   font-family: "regular-InriaSans";
 }
 
+h6 {
+  font-size: 16px;
+  font-family: "regular-InriaSans";
+}
+
 p {
   font-size: 18px;
   font-family: "regular-InriaSans";
@@ -141,11 +146,11 @@ p {
 }
 
 .green-background {
-  background-color: #366639;
+  background-color: hwb(124 21% 60%);
 }
 
 .green-color {
-  color: #366639;
+  color: hwb(124 21% 60%);
 }
 
 .yellow-color {
@@ -260,7 +265,7 @@ p {
 .links-header {
   font-family: "semibold-inter";
   font-size: 13px;
-  color: #366639;
+  color: hwb(124 21% 60%);
 }
 
 .links-header:hover {
@@ -275,10 +280,11 @@ p {
 #linkHeaderSubscribe {
   font-family: "semibold-inter";
   font-size: 0.8rem;
-  color: #366639;
+  color: hwb(124 21% 60%);
   border: solid 2px #E0E18A;
   padding: 0.6rem;
   border-radius: 2rem;
+  margin-right: 1rem;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -293,7 +299,7 @@ p {
   left: 50%;
   width: 0;
   height: 0;
-  background-color: #366639;
+  background-color: hwb(124 21% 60%);
   z-index: -1;
   transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
   transform: rotate(60deg);
@@ -313,7 +319,7 @@ p {
 #numQuemSomos {
   font-size: 64px;
   font-family: "regular-InriaSans";
-  color: #366639;
+  color: hwb(124 21% 60%);
   font-weight: 800;
 }
 
@@ -411,7 +417,7 @@ p {
 }
 
 #footerColor {
-  background-color: #366639;
+  background-color: hwb(124 21% 60%);
   height: 20px;
   width: 100%;
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 
 $White: #ffffff;
 $Black: #000000;
-$BlackGreen: #366639;
+$BlackGreen: hwb(124 21% 60%);
 $Yellow: #E0E18A;
 $Blue: #207a8633;
 
@@ -107,6 +107,11 @@ h2{
 
 h4{
     font-size: 20px;
+    font-family: 'regular-InriaSans';
+}
+
+h6{
+    font-size: 16px;
     font-family: 'regular-InriaSans';
 }
 

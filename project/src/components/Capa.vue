@@ -69,6 +69,7 @@ export default {
     gap: 0;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #containerCapas::-webkit-scrollbar {
