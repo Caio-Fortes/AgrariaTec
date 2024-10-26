@@ -16,7 +16,7 @@ import Contato from './components/Contato.vue';
   <Pesquisas />
   <Separator />
   <ProgramacaoEvento />
-  <!--  
-  <Parceiros />
-  <Contato />  -->
+  <Separator />
+  <Contato />
+  <!-- <Parceiros /> -->  
 </template>
