@@ -18,7 +18,7 @@ export default {
 }
 
 #containerSeparator div {
-  margin: 4rem 2rem;
+  margin: 4vw 3vw;
 }
 
 .separator {

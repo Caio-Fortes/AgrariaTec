@@ -13,7 +13,6 @@ import Contato from './components/Contato.vue';
   <QuemSomos />
   <Separator />
   <QuemSomos />
-  <Separator />
   <!--  <ProgramacaoEvento />
   <Contato />  -->
 </template>

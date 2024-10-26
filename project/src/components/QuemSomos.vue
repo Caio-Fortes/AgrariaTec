@@ -80,6 +80,7 @@ export default {
         height: 50vw;
         min-height: 300px;
         flex-direction: column;
+        display: inline-block;
     }
 
     .images-left {
@@ -90,6 +91,7 @@ export default {
 
     .title-component{
         font-size: 8vw;
+        margin-top: 0px;
     }
 
     .subtitle-component {
