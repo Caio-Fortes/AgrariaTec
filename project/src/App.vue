@@ -6,6 +6,7 @@ import QuemSomos from './components/QuemSomos.vue';
 import Pesquisas from './components/Pesquisas.vue';
 import ProgramacaoEvento from './components/Programacao.vue';
 import Contato from './components/Contato.vue';
+import Parceiros from './components/Parceiros.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import Contato from './components/Contato.vue';
   <Separator />
   <ProgramacaoEvento />
   <Separator />
+  <Parceiros />  
+  <Separator />
   <Contato />
-  <!-- <Parceiros /> -->  
 </template>
