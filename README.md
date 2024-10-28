@@ -2,7 +2,7 @@
 Projeto LP criado para o evento da AgrariaTec 2024. 
 
 tasks - 
-- Parceiros
+- ~~Parceiros~~
 - Contatos 
 - Adicionar links Parceiros e pesquisas para o scroll ser direcionado.
 - melhoria: Alinhar no centro as info dos cards atração do evento.
