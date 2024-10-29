@@ -1,49 +1,56 @@
 <template>
-    <div id="contato" class="flex">
+    <div class="footer-container">
         <div class="footer-logo-container">
             <div class="logo-container-footer">
                 <img src="/images/logo.png" alt="AgráriaTEC Logo" />
             </div>
-            <div class="description-footer"> 
-                <h4>Contatos Comerciais:</h4>
-                <ul class="contact-list"> 
-                    <li>
-                        <i class="fa-solid fa-user"></i>
-                        <span>Prof. Nilson Salvador: (35) 98858-3262</span>
+            <div class="description-footer">
+                <p class="descricao-footer">
+                    Todos os direitos deste projeto são reservados a Trez Comunicação. Marco Cesar Xavier - ME, de
+                    acordo com a lei 9.610 de 19 de fevereiro de 1998.
+                </p>
+            </div>
+        </div>
+
+        <div id="containerContatos" class="green-color">
+            <h4>Informações de Contato:</h4>
+
+            <div class="contatos">
+                <!-- Mídias Sociais -->
+                <ul class="contatos-digitais">
+                    <li class="contato-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <a class="contact-link" :href="links.instagram" target="_blank"> agrariatec</a>
                     </li>
-                    <li>
-                        <i class="fa-solid fa-user"></i>
-                        <span>Rita Carvalho: (35) 98863-4592</span>
+                    <li class="contato-item">
+                        <i class="fa-brands fa-facebook"></i>
+                        <a class="contact-link" :href="links.facebook" target="_blank">Agrária Tec</a>
                     </li>
-                    <li>
-                        <i class="fa-solid fa-user"></i>
-                        <span>Vanessa Mesquita: (35) 99157-6880</span>
+                    <li class="contato-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a class="contact-link email-link" :href="'mailto:' + links.email"> {{ links.email }}</a>
                     </li>
-                    <li>
-                        <i class="fa-solid fa-user"></i>
-                        <span>Igor Carvalho: (35) 99931-1346</span>
+                </ul>
+
+                <!-- Telefones -->
+                <ul class="telefones">
+                    <li class="contato-item">
+                        <i class="fa-solid fa-user"></i> Prof. Nilson Salvador: (35) 98858-3262
+                    </li>
+                    <li class="contato-item">
+                        <i class="fa-solid fa-user"></i> Rita Carvalho: (35) 98863-4592
+                    </li>
+                    <li class="contato-item">
+                        <i class="fa-solid fa-user"></i> Vanessa Mesquita: (35) 99157-6880
+                    </li>
+                    <li class="contato-item">
+                        <i class="fa-solid fa-user"></i> Igor Carvalho: (35) 99931-1346
                     </li>
                 </ul>
             </div>
         </div>
-        <div id="rowSeparator"></div>
-        <div id="containerContatos" class="green-color">
-            <h4 class="tituloContatos">Informações de Contato:</h4>
-            <p>
-                <i class="fa-brands fa-instagram"></i>
-                <a class="contact-link" :href="links.instagram" target="_blank"> agrariatec</a>
-            </p>
-            <p>
-                <i class="fa-brands fa-facebook"></i>
-                <a class="contact-link" :href="links.facebook" target="_blank">Agrária Tec</a>
-            </p>
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                <span>E-mail: <a class="contact-link"
-                        :href="'mailto:agrariatec@trezcomunicacao.com'">agrariatec@trezcomunicacao.com</a></span>
-            </p>
-        </div>
     </div>
+    <div id="footerColor"></div>
 </template>
 
 <script>
@@ -53,42 +60,26 @@ export default {
             links: {
                 instagram: 'https://www.instagram.com/agrariatec/',
                 facebook: 'https://www.facebook.com/p/Agr%C3%A1ria-Tec-61561230092492',
+                email: 'agrariatec@trezcomunicacao.com'
             }
         };
     }
 };
 </script>
 
-<style>
-.tituloContatos{
+<style scoped>
+span {
+    margin: 5px;
+}
+
+.descricao-footer {
     text-align: center;
-}
-
-#contato {
-    margin-bottom: 8px;
-}
-
-.contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.contact-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-    padding: 5px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.contact-list li i {
-    margin-right: 8px;
-    color: #4CAF50;
-    font-size: 1.2em;
+    font-family: "bold-InriaSans";
+    font-size: 1.2rem;
 }
 
 .contact-link {
+    font-family: "bold-InriaSans";
     font-size: 18px;
     margin-left: 8px;
     color: #4CAF50;
@@ -101,92 +92,121 @@ export default {
     font-size: 1.1em;
 }
 
+.email-link {
+    word-break: break-all;
+    white-space: normal;
+}
+
+.footer-container {
+    display: flex;
+}
+
 .footer-logo-container,
+#containerContatos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 50%;
+    margin-left: 5px;
+}
+
+.logo-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    max-width: 50%;
+}
+
 #containerContatos {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+}
+
+.contatos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contatos-digitais,
+.telefones {
     flex: 1;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: #f9f9f9;    
-}
-
-#containerContatos {
+    display: flex;
     flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    gap: 0.5rem;
 }
 
-
-.logo-container-footer img {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.description-footer h4,
-#containerContatos h4 {
-    color: #2E7D32;
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 2em;
-}
-
-#rowSeparator {
-    border-left: 2px solid #4CAF50;
-    height: 100px;
-    margin: 0 20px;
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .logo-container-footer img {
-    max-width: 50%; 
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 50%;
 }
 
 @media (max-width: 768px) {
-    .flex {
+    .footer-container {
+        display: flex;
         flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        padding: 10px;       
     }
 
     .footer-logo-container,
     #containerContatos {
+        min-width: 100%; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .descricao-footer {
+        font-size: 1.1rem;
+        margin-bottom: 10px; 
+    }
+
+    .contact-link {
+        font-size: 0.9rem;
+    }
+
+    .contatos {
+        flex-direction: column; 
+        align-items: center; 
         width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        align-items: stretch;
-        /* Alinha os cards com o mesmo tamanho */
+        margin-top: -25px;
     }
 
-    #rowSeparator {
-        display: none;
-    }
-
-    .contact-list li i {
-        font-size: 1em;
-    }
-
-    .contact-link {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 600px) {
-    .contact-link {
-        font-size: 14px;
-    }
-
-    .contact-link:hover {
-        font-size: 1.05em;
+    .contatos-digitais,
+    .telefones {
+        align-items: center; 
     }
 
     .logo-container-footer img {
-        max-width: 60%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .descricao-footer {
+        font-size: 1rem;
     }
 
-    h4 {
-        font-size: 1.2em;
+    .contact-link {
+        font-size: 0.8rem;
+    }
+
+    .logo-container-footer img {
+        max-width: 90%;
     }
 }
 </style>
