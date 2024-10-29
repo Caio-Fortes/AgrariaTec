@@ -149,6 +149,7 @@ img {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: "regular-InriaSans";
 }
 
 .logo-container-footer img {
