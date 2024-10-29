@@ -84,18 +84,22 @@ body {
     min-width: 300px;
     margin: 0;
     box-sizing: border-box;
+    align-items: center;
 }
 
 @media (max-width: 1090px) {
 
     .cards {
         flex: 1 1 calc(50% - 20px);
+        align-items: center;
+
     }
 
     .column-1.cards:nth-child(3) {
         flex-basis: 100%;
         margin: 0 auto 10px;
         max-width: 100%;
+        align-items: center;
     }
 
 }
@@ -111,6 +115,7 @@ body {
         max-width: 100%;
         margin-bottom: 20px;
         flex-basis: auto;
+        align-items: center;
     }
 
     .column-3 img {
@@ -134,6 +139,7 @@ body {
         text-align: center;
         overflow: hidden;
         height: auto;
+        align-items: center;
     }
 
     .titles-container {
@@ -148,6 +154,7 @@ body {
         overflow: hidden;
         height: auto;
         font-size: 12px;
+        align-items: center;
     }
 
     .titles-container {

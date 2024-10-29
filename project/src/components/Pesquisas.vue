@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="impacto-aprovacao">
         <div class="container-image-text-default">
             <div class="text-right">
                 <h1 class="title-component">Impacto e Aprovação</h1>

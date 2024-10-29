@@ -15,7 +15,6 @@ import Parceiros from './components/Parceiros.vue';
   <QuemSomos />
   <Separator />
   <Pesquisas />
-  <Separator />
   <ProgramacaoEvento />
   <Separator />
   <Parceiros />  
