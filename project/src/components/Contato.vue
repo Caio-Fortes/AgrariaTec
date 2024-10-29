@@ -4,9 +4,9 @@
             <div class="logo-container-footer">
                 <img src="/images/logo.png" alt="AgráriaTEC Logo" />
             </div>
-            <div class="description-footer">
+            <div class="description-footer"> 
                 <h4>Contatos Comerciais:</h4>
-                <ul class="contact-list">
+                <ul class="contact-list"> 
                     <li>
                         <i class="fa-solid fa-user"></i>
                         <span>Prof. Nilson Salvador: (35) 98858-3262</span>
