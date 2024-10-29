@@ -60,6 +60,12 @@
   margin-right: 2.5rem;
 }
 
+@media (max-width: 768px) {
+  .container-links-header {
+    margin: 0.5rem;
+  }
+}
+
 .links-header {
   font-family: "semibold-inter";
   font-size: 13px;

@@ -1,12 +1,14 @@
 <template>
-    <div class="partners-section">
-      <h2 class="partners-title">Parceiros</h2>
-      <div class="partners-container">
-        <div class="partner" v-for="partner in partners" :key="partner.id">
-          <img :src="partner.logo" :alt="partner.name" />
+    <section id="parceiros">
+      <div class="partners-section">
+        <h2 class="partners-title">Parceiros</h2>
+        <div class="partners-container">
+          <div class="partner" v-for="partner in partners" :key="partner.id">
+            <img :src="partner.logo" :alt="partner.name" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </template>
   
   <script>
@@ -40,7 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; 
+    gap: 1rem; 
   }
   
   .partner {

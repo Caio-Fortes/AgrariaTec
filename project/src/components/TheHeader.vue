@@ -35,7 +35,9 @@ export default {
             linksHeader: [
                 { label: 'Inicio', link: 'inicio', offset: 0 },
                 { label: 'Quem Somos', link: 'quem-somos', offset: 110 },
+                { label: 'Impacto e Aprovação', link: 'impacto-aprovacao', offset: 130 },
                 { label: 'O que vou encontrar?', link: 'programacao', offset: 90 },
+                { label: 'Parceiros', link: 'parceiros', offset: 200 },
                 { label: 'Contato', link: 'contato', offset: 110 },
             ]
         }
@@ -52,9 +54,7 @@ export default {
             const rect = element ? element.getBoundingClientRect() : { height: 0 };
             if (window.scrollY > (rect.height / 2)) {
                 this.headerFixedStyle = 'fixed';
-            } /* else if (window.scrollY > (rect.height - 400)) {
-                this.headerFixedStyle = 'scrolled';
-            } */ else {
+            } else {
                 this.headerFixedStyle = 'default';
             }
         },
@@ -64,6 +64,9 @@ export default {
                 const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
                 const targetPosition = sectionPosition - offset;
                 window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                if (this.menuOpen) {
+                    this.menuOpen = false;
+                }
             }
         },
         buttonInscrever() {
@@ -82,9 +85,10 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
     background-color: white;
 }
+
 .hamburger-btn {
     display: none;
 }
@@ -97,9 +101,10 @@ export default {
 
 @media (max-width: 768px) {
     #logoContainer {
-        display: block; 
+        display: block;
         margin-left: 10px;
     }
+
     .hamburger-btn {
         display: block;
         background: none;
