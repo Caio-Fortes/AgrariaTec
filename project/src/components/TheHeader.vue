@@ -16,7 +16,7 @@
                     </a>
                 </li>
                 <li class="container-links-header" id="linkHeaderSubscribe" @click="buttonInscrever">
-                    Inscrever-se
+                    Inscrever-se 
                 </li>
             </ul>
         </div>
