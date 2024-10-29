@@ -14,11 +14,12 @@
     data() {
       return {
         partners: [
-          { id: 1, name: 'Sebrae', logo: '/images/parceiros/sebrae_logo.png' },
-          { id: 2, name: 'Emater Minas Gerais', logo: '/images/parceiros/emater_logo.png' },
-          { id: 3, name: 'Ufla', logo: '/images/parceiros/ufla_logo.png' },
-          { id: 4, name: 'Epamig', logo: '/images/parceiros/epamig_logo.png' },
-          { id: 5, name: 'Faemg', logo: '/images/parceiros/faemg_logo.png' }
+          { id: 1, name: 'Governo Lavras', logo: '/images/parceiros/governo_logo.png' },
+          { id: 2, name: 'Sebrae', logo: '/images/parceiros/sebrae_logo.png' },
+          { id: 3, name: 'Emater Minas Gerais', logo: '/images/parceiros/emater_logo.png' },
+          { id: 4, name: 'Ufla', logo: '/images/parceiros/ufla_logo.png' },
+          { id: 5, name: 'Epamig', logo: '/images/parceiros/epamig_logo.png' },
+          { id: 6, name: 'Faemg', logo: '/images/parceiros/faemg_logo.png' }
         ]
       };
     }
