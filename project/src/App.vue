@@ -18,5 +18,5 @@ import Parceiros from './components/Parceiros.vue';
   <ProgramacaoEvento />
   <Parceiros />  
   <Separator />
-  <!-- <Contato /> -->
+  <Contato />
 </template>
