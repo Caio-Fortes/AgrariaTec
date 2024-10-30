@@ -7,8 +7,8 @@
                 </div>
                 <div class="description-footer">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin semper tortor.
+                        Todos os direitos deste projeto são reservados a Trez Comunicação.<br />
+                        Marco Cesar Xavier - ME, de acordo com a lei 9.610 de 19 de fevereiro de 1998.
                     </p>
                 </div>
             </div>
