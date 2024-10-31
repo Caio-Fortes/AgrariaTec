@@ -47,7 +47,6 @@
                         <p> Instituições financeiras </p>
                         <p> Espaço à agricultura familiar </p>
                         <p> Autoridades ligadas ao agronegócio </p>
-                        <p> Presença de 22 cidades da região </p>
                     </div>
                 </div>
             </div>

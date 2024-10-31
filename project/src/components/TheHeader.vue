@@ -16,7 +16,7 @@
                     </a>
                 </li>
                 <li class="container-links-header" id="linkHeaderSubscribe" @click="buttonInscrever">
-                    Inscrever-se 
+                    Seja um Expositor
                 </li>
             </ul>
         </div>

@@ -3,7 +3,7 @@
         <div class="container-image-text-default">
             <div class="text-right">
                 <h1 class="title-component">Quem Somos</h1>
-                <h4 class="subtitle-component">O espaço para inovação e informação.</h4>
+                <h4 class="subtitle-component">O espaço para inovação, informação e comercialização.</h4>
                 <p class="responsive-text">
                     <strong>O AgrariaTec é um amplo e agradável espaço de integração de vários segmentos
                     que compõem e integram:</strong> Informação, inovação, produtos e serviços de diversos

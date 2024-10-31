@@ -7,6 +7,7 @@ import Pesquisas from './components/Pesquisas.vue';
 import ProgramacaoEvento from './components/Programacao.vue';
 import Contato from './components/Contato.vue';
 import Parceiros from './components/Parceiros.vue';
+import localizacao from './components/localizacao.vue';
 </script>
 
 <template>
@@ -16,6 +17,8 @@ import Parceiros from './components/Parceiros.vue';
   <Separator />
   <Pesquisas />
   <ProgramacaoEvento />
+  <localizacao />
+  <Separator />
   <Parceiros />  
   <Separator />
   <Contato />
