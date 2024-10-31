@@ -3,15 +3,7 @@
         <div id="containerCapas" ref="containerCapas">
             <div v-for="img in CarrosselContent" :key="img.img" class="images-capas-container">
                 <div class="dark-overlay"></div>
-                <img :src="'/images/galeria/' + img.img" />
-                <div class="text-overlay">
-                    <h2>{{ img.title }}</h2>
-                    <ul>
-                        <li class="pWhite">
-                            {{ img.descricao }}
-                        </li>
-                    </ul>
-                </div>
+                <img :src="'/images/galeria/' + img" />
                 <div class="container-buttons">
                     <button @click="buttonLeftRight('left')" class="buttons-carrossel">
                         <i class="fa-solid fa-angle-left"></i>
@@ -29,42 +21,47 @@
 export default {
     data() {
         return {
-            totalImages: 37,
-            CarrosselContent: []
+            totalImages: 36,
+            CarrosselContent: [
+                'IMG (1).jpg',
+                'IMG (2).jpg',
+                'IMG (3).jpg',
+                'IMG (4).jpg',
+                'IMG (5).jpg',
+                'IMG (7).jpg',
+                'IMG (8).jpg',
+                'IMG (9).jpg',
+                'IMG (10).jpg',
+                'IMG (11).jpg',
+                'IMG (12).jpg',
+                'IMG (13).jpg',
+                'IMG (14).jpg',
+                'IMG (15).jpg',
+                'IMG (16).jpg',
+                'IMG (17).jpg',
+                'IMG (18).jpg',
+                'IMG (19).jpg',
+                'IMG (20).jpg',
+                'IMG (21).jpg',
+                'IMG (22).jpg',
+                'IMG (23).jpg',
+                'IMG (24).jpg',
+                'IMG (25).jpg',
+                'IMG (26).jpg',
+                'IMG (27).jpg',
+                'IMG (28).jpg',
+                'IMG (29).jpg',
+                'IMG (30).jpg',
+                'IMG (31).jpg',
+                'IMG (32).jpg'
+            ]
         };
     },
-    async mounted() {
-        await this.populateCarrosselContent();
-    },
     methods: {
-        async populateCarrosselContent() {
-            const imagePromises = [];
-
-            for (let i = 1; i <= this.totalImages; i++) {
-                // Importando as imagens dinamicamente
-                imagePromises.push(
-                    import(`@/assets/images/galeria/IMG (${i}).jpg`)
-                        .then((img) => ({
-                            img: `IMG (${i}).jpg`,
-                            imgPath: img.default, 
-                            title: '',
-                            descricao: ''
-                        }))
-                        .catch(() => ({
-                            img: `IMG (${i}).jpg`,
-                            imgPath: null,
-                            title: '',
-                            descricao: ''
-                        }))
-                );
-            }
-            this.CarrosselContent = await Promise.all(imagePromises);
-        },
         buttonLeftRight(direction) {
             const container = this.$refs.containerCapas;
             const itemWidth = container.firstElementChild.clientWidth;
             const scrollAmount = itemWidth;
-
             container.scrollBy({
                 left: direction === 'left' ? -scrollAmount : scrollAmount,
                 behavior: 'smooth'
@@ -99,9 +96,9 @@ export default {
 }
 
 #containerCapas img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -113,9 +110,10 @@ export default {
     flex: 0 0 100%;
     position: relative;
     scroll-snap-align: start;
-    width: 100vw; 
+    width: 100vw;
     height: 56vw;
 }
+
 .text-overlay {
     position: absolute;
     top: 10%;
