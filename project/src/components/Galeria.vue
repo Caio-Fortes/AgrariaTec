@@ -58,7 +58,6 @@ export default {
                         }))
                 );
             }
-
             this.CarrosselContent = await Promise.all(imagePromises);
         },
         buttonLeftRight(direction) {
@@ -89,12 +88,14 @@ export default {
     scroll-snap-type: x mandatory;
     width: 100%;
     scroll-behavior: smooth;
-    max-height: 56vw;
+    max-height: 29vw;
     overflow-y: hidden;
     gap: 0;
     flex-direction: row;
     align-items: center;
     margin-bottom: 2rem;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 #containerCapas img {
