@@ -7,14 +7,18 @@ import Pesquisas from './components/Pesquisas.vue';
 import ProgramacaoEvento from './components/Programacao.vue';
 import Contato from './components/Contato.vue';
 import Parceiros from './components/Parceiros.vue';
+import Galeria from './components/Galeria.vue'
+import MediaPlayer from './components/MediaPlayer.vue'
 </script>
 
 <template>
   <TheHeader />
   <Capa />
-  <QuemSomos />
+  <QuemSomos /> 
   <Separator />
   <Pesquisas />
+  <Galeria />
+  <MediaPlayer />
   <ProgramacaoEvento />
   <Parceiros />  
   <Separator />
