@@ -40,7 +40,7 @@ export default {
                 { label: 'Contato', link: 'contato', offset: 110 },
             ]
         }
-    },
+    }, 
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
     },

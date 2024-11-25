@@ -17,12 +17,12 @@ import MediaPlayer from './components/MediaPlayer.vue'
   <Capa />
   <QuemSomos /> 
   <Galeria />
-  <localizacao />
   <Separator />
   <Pesquisas />
   <MediaPlayer />
   <ProgramacaoEvento />
   <Parceiros />  
+  <localizacao />
   <Separator />
   <Contato />
 </template>

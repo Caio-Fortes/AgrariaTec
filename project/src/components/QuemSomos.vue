@@ -5,19 +5,18 @@
                 <h1 class="title-component">Quem Somos</h1>
                 <h4 class="subtitle-component">O espaço para inovação, informação e comercialização.</h4>
                 <p class="responsive-text">
-                    <strong>O AgrariaTec é um amplo e agradável espaço de integração de vários segmentos
-                    que compõem e integram:</strong> Informação, inovação, produtos e serviços de diversos
-                    segmentos empresariais do agronegócio brasileiro, principalmente aqueles
-                    inseridos nos conceitos atuais da agricultura conectada, <strong>onde mais do que ter
-                    vontade de inovar, é preciso que a inovação faça sentido.</strong>
+                    O AgrariaTec é um amplo e agradável espaço de integração de vários segmentos que compõem e integram o agronegócio. 
+                    Sendo Lavras e região uma das mais importantes fronteiras do agro em Minas Gerais era necessário um evento caracterizado 
+                    pela inovação e difusão tecnológica de máquinas, produtos e serviços voltados ao agronegócio.
                 </p>
                 <p class="responsive-text">
-                    <strong>Porque era necessário, em nossa região, um evento do agronegócio brasileiro</strong>
-                    caracterizado pela inovação e difusão tecnológica de máquinas e produtos agrícolas.
+                    Em seu segundo ano, o AgráriaTec traz novamente muita informação, 
+                    inovação e comercialização de produtos e serviços de diversos 
+                    segmentos empresariais do agronegócio brasileiro, principalmente
+                     aqueles inseridos nos conceitos atuais da agricultura conectada.
                 </p>
                 <p class="responsive-text">
-                    <strong>Porque devemos estar conectados a essa aceleração abrupta na revolução agro 4.0</strong>,
-                    com aderência cada vez maior de tecnologias dentro e fora do campo de produção.
+                    Agráriatec 2025 Conectando Inovações, Cultivando o Futuro.
                 </p>
             </div>
             <div class="images-left">

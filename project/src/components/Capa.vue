@@ -30,10 +30,9 @@ export default {
     data() {
         return {
             CarrosselContent: [
-                { img: 'banner.JPG', title: '', descricao: '' },
-                { img: 'trator.jpg', title: '', descricao: '' },
-                { img: 'fazenda.jpg', title: '', descricao: '' },
-                { img: 'trigo.jpg', title: '', descricao: '' }
+                { img: '2.jpg', title: '', descricao: '' },
+                { img: '3.jpg', title: '', descricao: '' },
+                { img: '4.jpg', title: '', descricao: '' },
             ]
         }
     },

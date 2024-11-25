@@ -18,10 +18,10 @@ export default {
       partners: [
         { id: 1, name: 'Governo Lavras', logo: 'https://lavras.mg.gov.br/wp-content/uploads/elementor/thumbs/logo_pml_verde-qczrd0ucpxfzc45ljwouon5oqy6asi1klgp8rdsp3u.png' },
         { id: 2, name: 'Sebrae', logo: '/images/parceiros/sebrae_logo.png' },
-        { id: 3, name: 'Emater Minas Gerais', logo: '/images/parceiros/emater_logo.png' },
-        { id: 4, name: 'Ufla', logo: '/images/parceiros/ufla_logo.png' },
-        { id: 5, name: 'Epamig', logo: '/images/parceiros/epamig_logo.png' },
-        { id: 6, name: 'Faemg', logo: '/images/parceiros/faemg_logo.png' }
+        { id: 3, name: 'Ufla', logo: '/images/parceiros/ufla_logo.png' },
+        { id: 4, name: 'Epamig', logo: '/images/parceiros/epamig_logo.png' },
+        { id: 5, name: 'Emater Minas Gerais', logo: '/images/parceiros/emater_logo.png' },
+        { id: 6, name: 'Faemg', logo: '/images/parceiros/sindicato.jpg' },
       ]
     };
   }
