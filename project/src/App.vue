@@ -9,7 +9,7 @@ import Contato from './components/Contato.vue';
 import Parceiros from './components/Parceiros.vue';
 import localizacao from './components/localizacao.vue';
 import Galeria from './components/Galeria.vue'
-import MediaPlayer from './components/MediaPlayer.vue'
+import Video from './components/Video.vue';
 </script>
 
 <template>
@@ -19,7 +19,8 @@ import MediaPlayer from './components/MediaPlayer.vue'
   <Galeria />
   <Separator />
   <Pesquisas />
-  <MediaPlayer />
+  <Separator />
+  <Video /> 
   <ProgramacaoEvento />
   <Parceiros />  
   <localizacao />
