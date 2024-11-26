@@ -194,7 +194,6 @@ export default {
     }
 }
 
-
 #containerCapas img {
     width: 100%;
     height: auto;

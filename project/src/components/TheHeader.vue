@@ -35,8 +35,8 @@ export default {
             linksHeader: [
                 { label: 'Inicio', link: 'inicio', offset: 0 },
                 { label: 'Quem Somos', link: 'quem-somos', offset: 110 },
-                { label: 'Localização', link: 'localizacao', offset: 130 },
                 { label: 'O que vou encontrar?', link: 'programacao', offset: 90 },
+                { label: 'Localização', link: 'localizacao', offset: 130 },
                 { label: 'Contato', link: 'contato', offset: 110 },
             ]
         }

@@ -9,7 +9,7 @@
                     <h1>O que vou encontrar?</h1>
                 </div>
                 <div class="column-3">
-                    <img src="/images/home.png" />
+                    <img src="/images/home.png" id="imgCeleiro"/>
                 </div>
             </div>
             <div class="set-flex">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="column-1 cards">
                     <div class="image-cards">
-                        <img src="/images/icons/vaca.png" />
+                        <img src="/images/icons/vaca.png"/>
                     </div>
                     <div class="titles-container">
                         <div class="title-cards">Interação e Participação</div>
@@ -66,9 +66,17 @@ body {
 
 .set-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     max-width: 100vw;
+}
+
+#imgCeleiro {
+    max-height: 14vw;
+}
+
+.column-3 {
+    justify-self: end;
 }
 
 .set-flex {
@@ -87,7 +95,6 @@ body {
 }
 
 @media (max-width: 1090px) {
-
     .cards {
         flex: 1 1 calc(50% - 20px);
         align-items: center;
@@ -132,7 +139,6 @@ body {
 }
 
 @media (max-width: 400px) {
-
     .cards {
         padding: 10px;
         text-align: center;
