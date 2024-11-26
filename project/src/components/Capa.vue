@@ -20,6 +20,9 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
                 </div>
+                <button class="bottom-right-button" @click="buttonInscrever">
+                    Seja um Expositor
+                </button>
             </div>
         </div>
     </section>
@@ -46,6 +49,9 @@ export default {
                 left: direction === 'left' ? -scrollAmount : scrollAmount,
                 behavior: 'smooth'
             });
+        },
+        buttonInscrever() {
+            window.open('https://forms.gle/g8Xit6GvF5TMXvUp8', '_blank');
         },
     }
 }
@@ -102,6 +108,27 @@ export default {
     z-index: 10;
 }
 
+.bottom-right-button {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: #f7c35f;
+    color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    font-family: "semibold-inter";
+    border-radius: 1rem;
+    transition: all 0.4s ease;
+}
+
+.bottom-right-button:hover {
+    background-color: hwb(124 21% 60%);
+    color: white;
+}
+
 @media (max-width: 500px) {
     .buttons-carrossel {
         background-color: rgba(0, 0, 0, 0.5);
@@ -120,7 +147,13 @@ export default {
         cursor: pointer;
         margin: 20px;
     }
+
+    .bottom-right-button {
+        font-size: 0.5rem;
+        padding: 0.5rem
+    }
 }
+
 
 @media (min-width: 500px) {
     .buttons-carrossel {
@@ -140,7 +173,27 @@ export default {
         cursor: pointer;
         margin: 20px;
     }
+
+    .bottom-right-button {
+        font-size: 0.7rem;
+        padding: 0.5rem
+    }
 }
+
+@media (min-width: 800px) {
+    .bottom-right-button {
+        font-size: 1rem;
+        padding: 0.8rem
+    }
+}
+
+@media (min-width: 1000px) {
+    .bottom-right-button {
+        font-size: 1.2rem;
+        padding: 1.2rem
+    }
+}
+
 
 #containerCapas img {
     width: 100%;
