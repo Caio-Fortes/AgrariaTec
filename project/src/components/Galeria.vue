@@ -73,8 +73,8 @@ export default {
 
 <style scoped>
 #galeria {
-    padding: 5% 10% 0% 10%;
-    width: 80%;
+    padding: 5% 7% 0% 7%;
+    width: 85%;
     height: 80%;
     overflow-x: hidden;
 }

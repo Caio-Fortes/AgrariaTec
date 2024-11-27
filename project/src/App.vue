@@ -10,17 +10,20 @@ import Parceiros from './components/Parceiros.vue';
 import localizacao from './components/localizacao.vue';
 import Galeria from './components/Galeria.vue'
 import Video from './components/Video.vue';
+import Feedbacks from './components/Feedbacks.vue';
 </script>
 
 <template>
   <TheHeader />
   <Capa />
   <QuemSomos /> 
-  <Galeria />
   <Separator />
   <Pesquisas />
   <Separator />
   <Video /> 
+  <Galeria />
+  <Separator />
+  <Feedbacks />
   <ProgramacaoEvento />
   <Parceiros />  
   <localizacao />
