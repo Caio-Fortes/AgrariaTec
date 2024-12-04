@@ -19,7 +19,7 @@
                     <ul class="contatos-digitais">
                         <li class="contato-item">
                             <i class="fa-brands fa-instagram"></i>
-                            <a class="contact-link" :href="links.instagram" target="_blank"> agrariatec</a>
+                            <a class="contact-link" :href="links.instagram" target="_blank"> agráriatec</a>
                         </li>
                         <li class="contato-item">
                             <i class="fa-brands fa-facebook"></i>

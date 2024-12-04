@@ -2,11 +2,11 @@
     <section id="quem-somos">
         <div class="container-image-text-default">
             <div class="text-right">
-                <h2 class="title-component">AgrariaTec</h2>
+                <h2 class="title-component">AgráriaTec</h2>
                 <p class="responsive-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget justo purus. Vivamus
-                    pellentesque rutrum nunc, eu vestibulum felis condimentum et. Praesent vel nisl vitae ligula
-                    pellentesque ultrices at et tortor.
+                    Com inovação, tecnologia e conhecimento, o Agráriatec conecta produtores, especialistas e empresas
+                    para impulsionar o desenvolvimento sustentável no campo. Confira os melhores momentos do evento que
+                    está revolucionando a agricultura e fortalecendo o agronegócio da nossa região!
                 </p>
             </div>
             <div class="images-left">

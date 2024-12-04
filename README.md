@@ -1,2 +1,2 @@
-# AgrariaTec
-Projeto LP criado para o evento da AgrariaTec 2025. 
+# AgráriaTec
+Projeto LP criado para o evento da AgráriaTec 2025. 

@@ -8,7 +8,7 @@
                         <img v-if="feedback.photo" :src="feedback.photo" alt="Photo" class="photo" />
                         <div>
                             <p class="name">{{ feedback.name }}</p>
-                            <p class="location">{{ feedback.location }}</p>
+                            <p class="carrer">{{ feedback.carrer }}</p>
                         </div>
                     </div>
                 </div>
@@ -31,19 +31,14 @@ export default {
         return {
             feedbacks: [
                 {
-                    id: 1, text: `Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Suspendisse eget justo purus. Vivamus pellentesque rutrum nunc, eu vestibulum felis condimentum et. Praesent vel nisl vitae ligula
-                    pellentesque ultrices at et tortor.`, name: "João Silva", location: "São Paulo, SP", photo: '/images/galeria/IMG (5).jpg'
+                    id: 1, text: `Ficamos muitos satisfeitos, com a visibilidade que esse evento trouxe 
+                    para a nossa cidade e principalmente colocando Lavras como um município que promove 
+                    o agronegócio.`, name: "Gláucia Vale", carrer: "Analista do Sebrae", photo: '/images/feedbacks-pessoas/glaucia.PNG'
                 },
                 {
-                    id: 2, text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget justo purus. Vivamus
-                    pellentesque rutrum nunc, eu vestibulum felis condimentum et. Praesent vel nisl vitae ligula
-                    pellentesque ultrices at et tortor.`, name: "João Silva", location: "São Paulo, SP", photo: '/images/galeria/IMG (7).jpg'
-                },
-                {
-                    id: 3, text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget justo purus. Vivamus
-                    pellentesque rutrum nunc, eu vestibulum felis condimentum et. Praesent vel nisl vitae ligula
-                    pellentesque ultrices at et tortor.`, name: "João Silva", location: "São Paulo, SP", photo: '/images/galeria/IMG (5).jpg'
+                    id: 2, text: `Com uma boa participação de público, realizamos vários negócios. 
+                    O Agráriatec atendeu bem as expectativas e desejamos que 2025 estejamos juntos novamente.`, 
+                    name: "José Antônio", carrer: "Diretor Lavras Irrigação", photo: '/images/feedbacks-pessoas/jose.PNG'
                 },
             ],
         };
@@ -123,7 +118,7 @@ export default {
     margin-bottom: 0.2rem;
 }
 
-.location {
+.carrer {
     font-size: 0.9rem;
     color: #777;
 }
