@@ -34,7 +34,7 @@ export default {
         return {
             CarrosselContent: [
                 { img: '2.jpg', title: '', descricao: '' },
-                { img: '3.jpg', title: '', descricao: '' },
+                { img: '5.jpg', title: '', descricao: '' },
                 { img: '4.jpg', title: '', descricao: '' },
             ]
         }
