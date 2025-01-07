@@ -40,7 +40,7 @@ export default {
                 { label: 'Contato', link: 'contato', offset: 110 },
             ]
         }
-    }, 
+    },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
     },
@@ -96,6 +96,10 @@ export default {
     display: flex;
     text-align: center;
     margin-right: 50px;
+}
+
+#linkHeaderSubscribe {
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
